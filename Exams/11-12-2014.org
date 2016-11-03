@@ -1,0 +1,56 @@
+#+TITLE: Exame de Qualificação 11/12/2014
+#+AUTHOR: Álvaro Freitas Moreira e Luciana S. Buriol
+#+STARTUP: showall
+#+OPTIONS: toc:nil todo:nil num:nil
+#+LaTeX_CLASS: article
+#+LaTeX_HEADER: \usepackage[margin=0.5in]{geometry}
+
+* Teoria da Computação
+
+** Material
+
+- [[https://www.youtube.com/watch?v=macM_MtS_w4][Turing & The Halting Problem - Computerphile]]
+
+** Perguntas
+
+1. Escreva sobre a tese de Church-Turing. Em sua resposta você deve:
+
+  1. Escrever o enunciado da tese; 
+
+     + *Church Turing Thesis*: If function $f$ is effectively
+	calculable, then $f$ is Turing-computable. Equivalently, if a
+	function $f$ is not Turing Computable, then $f$ is not
+	effectively computable.
+
+  2. Explicar porque é uma tese e não um teorema (ou seja, explicar por
+     que ela não pode ser provada);
+
+     + A Tese de Church-Turing se trata de uma tese e não de um
+       teorema, uma vez que não pode ser provada. Se a afirmação
+       indicando que uma função $f$ é efetivamente computável também é
+       Turing-computável fosse falsa, deveria ser esperada a
+       existência de ao menos uma função que pode ser efetivamente
+       computável mas que ao mesmo tempo não é Turing-computável. O
+       fato é que esta função nunca aconteceu ou jamais foi
+       encontrada, sugerindo - mas de nenhuma forma provando - que
+       esta função não existe, que por sua vez significa que a
+       afirmação inicial é verdadeira.
+
+     + The reason for this is that among the concepts it involves
+       there is one that is informal and imprecise, namely that of
+       “effective computability.” The thesis equates the
+       mathematically precise notion of “solvable by a Turing machine”
+       with the informal, intuitive notion of “solvable effectively,”
+       which alludes to all real computers and all programming
+       languages, those that we know about at present as well as those
+       that we do not.  It thus sounds more like a wild speculation
+       than what it really is: a deep and far-reaching statement, put
+       forward by two of the most respected pioneers of theoretical
+       computer science.
+
+  3. Escrever sobre as evidências que suportam a sua verdade (mencionar
+     duas dessas evidências)
+
+  4. Explicar a sua importância para a Ciência da Computação, em
+     particular explicar porque ela é importante em provas de resultados
+     negativos, como a indecidibilidade do Problema da Parada.
