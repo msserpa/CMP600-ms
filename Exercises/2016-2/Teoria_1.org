@@ -1,0 +1,40 @@
+#+TITLE: Lista de Exercícios - 07/11/2016
+#+AUTHOR: Álvaro Freitas Moreira
+#+STARTUP: showall
+#+OPTIONS: toc:nil todo:nil num:nil
+#+LaTeX_CLASS: article
+#+LaTeX_HEADER: \usepackage[margin=0.75in]{geometry}
+
+* Lista de Exercícios
+
+1. (2 points) Dissert on the Church-Turing Thesis making clear (I) what it claims, and (II) its significance for Computer Science. Also explain (III) why it cannot be formally proved, and (IV) why, even without a formal proof of its truth, it is accepted as true being one of the foundations of the Theory of Computability.
+
+2. (2 points) One of the most important and interesting theorems of Computability Theory is Rice's Theorem. It says that every nontrivial property of function computed by programs is undecidable. A property of partial functions is said to be /trivial/ if it is true for all functions or none. Note that the theorem refers to properties of /functions/ computed by programs and not properties of the representation/model used to compute functions. Properties such as "the number of transitions of a Turing Machine is greater then 100", or "the number of lines of code a C program is equal to 5000", for instance, are properties of the representation/model and not of the computed functions.
+
+   1. Explain why the theorem refers only to non-trivial properties, i.e., why it does not "cover" trivial properties too.
+   2. Give at least three examples of non-trivial properties of functions computed by programs.
+   3. Dissert on the significance of Rice's Theorem for the practice of Computer Science.
+
+3. (2 points) Give a proof of the undecidability of the Halting Problem using the Rice's Theorem.
+
+4. (2 points) A set $S$ is countable (or enumerable) if it is empty or if there is a one-to-one correspondence of all its elements with the elements of $\mathbb{N}$. Or, equivalently, if there is sequence $s_0$, $s_1$, $s_2$, ... with all (and only all) the elements of S. This sequence is called an enumeration of S. This terminology also applies to sets of functions, partial or total. Let $A$ and $B$ be sets and let $S$ be a nonempty set whose elements are partial functions from A to B. Then $S$ is countable if there exists a sequence $f_0$, $f_1$, ... such that $g \in S$ if and only if $g = f_i$, for some $i$, i.e., $g$ occupies some position $i$ in the sequence. Prove the following statements:
+
+   1. The set of all total functions from $\mathbb{N}$ to $\mathbb{N}$ is uncountable;
+   2. The set of all partial functions from $\mathbb{N}$ to $\mathbb{N}$ is uncountable;
+   3. The set of all partial computable functions from $\mathbb{N}$ to $\mathbb{N}$ is uncountable;
+   4. The set of all total computable functions from $\mathbb{N}$ to $\mathbb{N}$ is uncountable;
+   5. There are total non computable functions from $\mathbb{N}$ to $\mathbb{N}$;
+   6. There are partial non computable functions from $\mathbb{N}$ to $\mathbb{N}$.
+
+   Observations:
+
+   - the proof of (a) above can be proved by contradiction using the method of diagonalization
+   - the proof of (b) follows immediately from the result (a) above and set theory
+   - the proof of (c) makes use of the Church-Turing Thesis
+   - the proof of (d) is immediate from the statement (c) and basic knowledge of functions and set theory
+   - the proofs of (d) and (e) are also immediate from the previous results and set theory
+
+   I. e., the proof effort is actually in the items (a) and (c) above. The proof of the remaining statements can be made assuming the truth of previous statements using basic results from set theory according to the observations above.
+
+5. (2 points) Prove that (I) the set $\mathbb{Q}$ of rational numbers is countable, and (II) the set $\mathbb{R}$ of real numbers is uncountable.
+
