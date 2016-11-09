@@ -9,20 +9,35 @@
 
 1. (2 points) Dissert on the Church-Turing Thesis making clear (I) what it claims, and (II) its significance for Computer Science. Also explain (III) why it cannot be formally proved, and (IV) why, even without a formal proof of its truth, it is accepted as true being one of the foundations of the Theory of Computability.
 
+   *Reposta:*
+
+   1. Iguala ou associa os conceitos de computado por uma máquina de Turing e efetivamente computável.
+   2. Estabeleve limites para o que é computável e aquilo que não é.
+   3. Equivalencia entre a noção formal de Turing-Computável e o termo efetivamente computável, que é um termo impreciso e sem uma definição bem formada.
+   4. Ninguém ainda apresentou provas que permitem refutá-la, por exemplo, algo que pode ser computável mas não é computável por uma TM.
+
 2. (2 points) One of the most important and interesting theorems of Computability Theory is Rice's Theorem. It says that every nontrivial property of function computed by programs is undecidable. A property of partial functions is said to be /trivial/ if it is true for all functions or none. Note that the theorem refers to properties of /functions/ computed by programs and not properties of the representation/model used to compute functions. Properties such as "the number of transitions of a Turing Machine is greater then 100", or "the number of lines of code a C program is equal to 5000", for instance, are properties of the representation/model and not of the computed functions.
 
    1. Explain why the theorem refers only to non-trivial properties, i.e., why it does not "cover" trivial properties too.
    2. Give at least three examples of non-trivial properties of functions computed by programs.
    3. Dissert on the significance of Rice's Theorem for the practice of Computer Science.
 
+   *Resposta:*
+
+      1. Caso uma propriedade for trivial então já se sabe de ante-mão sobre ela.
+      2. (1) É uma função total ou parcial? (2) A função retorna apenas números pares? (3) Uma função $f$ é igual a uma função $g$ previamente definida?
+      3. Trata-se de um importante teorema especialmente para a Engenharia de Software, e também no desenvolvimento de plugins para predição de comportamento em aplicações.
+
 3. (2 points) Give a proof of the undecidability of the Halting Problem using the Rice's Theorem.
+
+   *Resposta:* Dada uma função computável, ela é total ou não? Esta é uma propriedade não-trivial e interessante. Sendo assim, pelo que o Teorema de Rice indica, está propriedade é não computável.
 
 4. (2 points) A set $S$ is countable (or enumerable) if it is empty or if there is a one-to-one correspondence of all its elements with the elements of $\mathbb{N}$. Or, equivalently, if there is sequence $s_0$, $s_1$, $s_2$, ... with all (and only all) the elements of S. This sequence is called an enumeration of S. This terminology also applies to sets of functions, partial or total. Let $A$ and $B$ be sets and let $S$ be a nonempty set whose elements are partial functions from A to B. Then $S$ is countable if there exists a sequence $f_0$, $f_1$, ... such that $g \in S$ if and only if $g = f_i$, for some $i$, i.e., $g$ occupies some position $i$ in the sequence. Prove the following statements:
 
    1. The set of all total functions from $\mathbb{N}$ to $\mathbb{N}$ is uncountable;
    2. The set of all partial functions from $\mathbb{N}$ to $\mathbb{N}$ is uncountable;
-   3. The set of all partial computable functions from $\mathbb{N}$ to $\mathbb{N}$ is uncountable;
-   4. The set of all total computable functions from $\mathbb{N}$ to $\mathbb{N}$ is uncountable;
+   3. The set of all partial computable functions from $\mathbb{N}$ to $\mathbb{N}$ is countable;
+   4. The set of all total computable functions from $\mathbb{N}$ to $\mathbb{N}$ is countable;
    5. There are total non computable functions from $\mathbb{N}$ to $\mathbb{N}$;
    6. There are partial non computable functions from $\mathbb{N}$ to $\mathbb{N}$.
 
@@ -36,5 +51,15 @@
 
    I. e., the proof effort is actually in the items (a) and (c) above. The proof of the remaining statements can be made assuming the truth of previous statements using basic results from set theory according to the observations above.
 
+   *Resposta:*
+
+   1. Diagonalização;
+   2. Teoria dos Conjuntos;
+   3. Tese de Church-Turing. MT podem ser codificadas por números naturais;
+   4. Teoria dos Conjuntos;
+   5. Statement A + D;
+   6. Statement B + C.
+
 5. (2 points) Prove that (I) the set $\mathbb{Q}$ of rational numbers is countable, and (II) the set $\mathbb{R}$ of real numbers is uncountable.
 
+   * https://www.youtube.com/watch?v=EefImppChJk
