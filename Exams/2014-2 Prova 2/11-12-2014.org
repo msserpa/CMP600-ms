@@ -20,7 +20,7 @@
 
    1. *Escrever o enunciado da tese*
 
-      - /Church Turing Thesis/: If function $f$ is effectively calculable, then $f$ is Turing-computable. Equivalently, if a function $f$ is not Turing Computable, then $f$ is not effectively computable.
+      - /Church Turing Thesis/: If a function $f$ is effectively calculable, then $f$ is Turing-computable. Equivalently, if a function $f$ is not Turing Computable, then $f$ is not effectively computable.
 
    2. *Explicar porque é uma tese e não um teorema (ou seja, explicar por que ela não pode ser provada)*
 
@@ -32,7 +32,7 @@
 
       - Por muito tempo pesquisadores tentaram desenvolver um computador dito universal tentando capturar a noção elusiva de efetivamente computável. Turing sugeriu seu modelo de máquinas primitivas e Church desenvolveu um formalismo matemático simples de funções chamadas cálculo lambda. Outros métodos desenvolvidos, como é o caso das funções recursivas, também obtiveram sucesso em utilizar seus modelos para resolver diversos problemas algorítmicos que ficaram conhecidos como algoritmos efetivamente computáveis. Alguns modelos mais complexos se aproximavam até mesmo dos computadores atuais, porém, o fato crucial sobre esses modelos é que todos se mostravam equivalentes em termos de classe da algoritmos que eram capazes resolver.
 
-      - Em resumo, o fato que diversas pessoas trabalharem com diferentes ferramentas e técnicas serem capazes de capturar o mesmo conceito serve como evidência para a profundidade da afirmação da tese de Church-Turing. Devido todas elas partirem de um mesmo conceito e terminarem com aparentemente diferentes definições, mas equivalentes, podemos utilizar isso como justificativa para assemelhar essa noção intuitiva com os resultados das outras definições precisas.
+      - Em resumo, o fato de que diversas pessoas trabalharam com diferentes ferramentas e técnicas foram capazes de capturar o mesmo conceito serve como evidência para a profundidade da afirmação da tese de Church-Turing. Devido todas elas partirem de um mesmo conceito e terminarem com aparentemente diferentes definições, mas equivalentes, podemos utilizar isso como justificativa para assemelhar essa noção intuitiva com os resultados das outras definições precisas.
 
    4. *Explicar a sua importância para a Ciência da Computação, em particular explicar porque ela é importante em provas de resultados negativos, como a indecidibilidade do Problema da Parada.*
 
@@ -44,9 +44,27 @@
 
    1. *Complexidade de tempo de um algoritmo e complexidade de tempo de um problema algoritmico.*
 
+      - Alguns problemas (ou funções) apresentam um tempo de execução ruim, sendo o principal foco da teoria da complexidade a análise e a classificação destes problemas entre aqueles que apresentam tempo de execução "bom" e "ruim". Esta dinstinção pode ser feita em funções ditas *polinomiais* (bom), onde o tempo de execução tem como limite superior uma função $n^k$, onde $k$ é uma constante, e as funções *super-polinomais* (ruim).
+
    2. *Complexidade de tempo polinomial e complexidade de tempo exponencial.*
+
+      - Um algoritmo cujo tempo de execução é dominado em seu limite superior por uma função polinomial será chamado de polinomial no tempo. Do mesmo modo, um algoritmo cujo tempo de execução é dominado em seu limite superior por uma função super-polinomial será chamado de algoritmo exponencial no tempo.
 
    3. *Problemas tratáveis e intratáveis (com exemplos de problemas tratáveis e intratáveis, e exemplos de problemas com "status" em relação a tratabilidade desconhecida).*
 
+      - Um problema pode ser dito *tratável* se admite uma solução polinomial, e *intratável* caso o problema só admita uma solução exponencial no tempo. Ainda, se caso um problema for provado admitir solução polinomial, dizemos que seu /lower-bound/ é polinomial. Do mesmo modo, se a melhor solução conhecida para um determinado problema for $O(2^n)$, diz-se então que seu /upper-bound/ é exponencial. Um problema é dito _fechado_ se seu /upper-bound/ e /lower-bound/ são o mesmo. Da mesma forma, se seu /upper-bound/ > /lower-bound/, diz-se que o problema está _aberto_.
+
+      - A classe NP-Completo tem a característica de conter problemas em aberto, onde o melhor algoritmo conhecido é exponencial e seu /lower-bound/ é polinomial. Uma propriedade desta classe de problemas é que os problemas são redutíveis entre si. Assim, caso uma solução polinomial seja apresentada para um dos problemas desta classe, isso implica na solução de todos os outros problemas na mesma classe.
+
+      - Por esse motivo não é possível saber se a classe de problemas P e NP são equivalentes. Essa questão também é conhecida por *P vs. NP*. Assim, não se sabe se todos os problemas NP-Completo são tratáveis ou intratáveis.
+
 3. *A fim de entender melhor problemas algorítmicos com respeito ao uso de recursos, pesquisadores começaram a agrupá-los de acordo com suas semelhanças em relação a requisitos de tempo (e espaço). Esse estudo deu origem as classes de complexidade. Faça um breve ensaio sobre as classes /PTIME, NPTIME, NPTIME-Complete, EXPTIME/.*
    *Descreva quais são as propriedades determinantes para um problema estar dentro de cada uma dessas classes. Complemente o ensaio com diagramas de Venn que mostram a relação entre essas classes. Discutir sobre a questão P = NP.*
+
+   [[./assets/venn_diag.png]]
+
+   - /Problemas P/: classe de problemas que admitem solução em tempo polinomial por uma máquina de Turing determinística;
+   - /Problemas NP/: /Non-deterministic Polynomial time/, um dado problema é dito NP quando existe uma certificação dos resultados que pode ser executado em tempo polinomial, isto é, a solução pode ser verificada em tempo polinomial. Ou seja, um problema que tem solução em tempo polinomial utilizando uma máquina de Turing não-determinística;
+   - /Problemas NP-Hard/: um problema é dito NP-Hard quando todos os outros problemas em NP, podem ser reduzidos a ele em tempo polinomial: $\forall L \in NP: L \leqslant_p L'$;
+   - /Problemas EXPTIME/: classe de problemas que não admite solução em tempo polinomial;
+   - /Problemas NP-Completos/: um problema é dito NP-Completo quando ele é tanto NP, quando NP-Hard. Uma propriedade desta classe é que ela engloba problemas abertos, com /upper-bound/ exponencial, e o /lower-bound/ polinomial. Qualquer problema em NP-Completo pode ser reduzido a outro problema NP-Completo em tempo polinomial por uma Máquina de Turing Não-Determinística. Por esse motivo não se sabe se a classe de problemas P é NP são equivalentes. Essa questão também é conhecida por P vs. NP. Assim, não se sabe se todos os problemas em NP-Completo são tratáveis ou intratáveis.
