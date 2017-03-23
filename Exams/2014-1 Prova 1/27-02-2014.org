@@ -1,0 +1,26 @@
+#+TITLE: Exame de Qualificação 27/02/2014
+#+AUTHOR: Leila Ribeiro e Luciana S. Buriol
+#+STARTUP: showall
+#+OPTIONS: toc:nil todo:nil num:nil
+#+LaTeX_CLASS: article
+#+LaTeX_HEADER: \usepackage[margin=0.75in]{geometry}
+
+* Teoria da Computação
+
+** Perguntas
+
+   1. *(2.5 Pontos) Teorema: A classe de funções recursivas parciais é idêntica à classe de funções Turing-computáveis.*
+
+      1. *Defina essa classe de funções e faça um esquema da prova deste teorema explicando o que deve ser provado em cada passo.*
+
+         - A classe de *funções primitivas recursivas* é formada por um conjunto de funções iniciais (*sucessor*, *zero*, *projeção*), duas operações sobre as funções (*composição* e *recursão*), e todas as funções obtidas a partir das funções iniciais mais os dois operadores.
+         - A classe de funções primitivas recursivas foi proposta inicialmente para compor todas as funções efetivamente computáveis, porém, Ackermamm propôs uma função cuja comunidade aceitou como sendo efetivamente computável e que não era uma função primitiva recursiva. Assim as funções primitivas recursivas unidas ao operador de *minimização* formam as *funções parciais recursivas*.
+         - O Teorema diz que uma função F é Turing-computável, se e somente se, ela forma uma função parcial recursiva. Como o teorema é bidirecional, temos duas partes: (a) PRF $\Rightarrow$ TM e (b) TM $\Rightarrow$ PRF.
+
+           1. /PRF $\Rightarrow$ TM/: iremos provar por indução apresentando uma TM que compute cada uma das funções iniciais, os operadores de composição e recursão primitiva, e também o operador de minimização. Uma vez que seja possível criar uma TM para uma das PRF, conclui-se então que toda função que pode ser computada a partir das funções recursivas parciais, pode ser computada também a partir de uma TM.
+
+           2. /TM $\Rightarrow$ PRF/: 
+
+      2. *Explique por que este teorema é importante.*
+
+         - Dada a equivalência entre a classe de funções parciais recursivas e as funções Turing-computáveis, podemos então aplicar a grande quantidade de resultados relativos a classe de funções recursivas na classe de funções Turing-computáveis.
