@@ -12,7 +12,7 @@
 
 1. *(2.5 pontos) Um professor gostaria de automatizar a correção dos exercícios de programação Python dos alunos, construindo um programa que implemente a função PROG-CORRETO?, definida assim:*
 
-  */Entrada/: Dois programas escritos em Python, um representando a solução (/sol/) e outro o programa submetido pelo aluno (/sub).*
+  */Entrada/: Dois programas escritos em Python, um representando a solução (/sol/) e outro o programa submetido pelo aluno (/sub/).*
 
   */Saída/: /Verdadeiro/, se o programa /sub/ implementa  amesma função que o programa /sol/, ou seja, se para todas as entradas para as quais /sol/ produz um valor de saída, /sub/ produz o mesmo valor, e para todas as entradas para as quais /sol/ não produz saída, /sub/ também não produz saída. A saída deve ser /Falso/ caso contrário*.
 
