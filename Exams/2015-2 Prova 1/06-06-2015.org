@@ -1,4 +1,4 @@
-#+TITLE: Exame de Qualificação 04/03/2015
+#+TITLE: Exame de Qualificação 06/09/2015
 #+AUTHOR: Álvaro Freitas Moreira e Luciana S. Buriol
 #+STARTUP: showall
 #+OPTIONS: toc:nil todo:nil num:nil
@@ -12,7 +12,7 @@
 
 1. *(2.5 pontos) Disserte sobre os conjuntos de problemas NP, NP-Difíceis e NP-Completos. Desenhe diagramas de Venn mostrando a relação entre estes três conjuntos para o caso de P $=$ NP e P $\neq$ NP.*
 
-   l\textcolor{red}{Escrever.}
+   \textcolor{red}{Escrever.}
 
 2. *(2.5 pontos) Disserte sobre os seguintes aspectos da /Teoria da Computabilidade/.*
    1) *Qual é o seu principal foco de estudo;*
