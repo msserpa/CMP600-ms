@@ -13,7 +13,7 @@
 11. [2016-2 Prova 1 - Álvaro Freitas Moreira e Marcus Ritt (not available)
 11. [2016-2 Prova 2 - Álvaro Freitas Moreira e Marcus Ritt](https://github.com/eliezerb/CMP600/tree/master/Exams/2016-2%20Prova%202)
 12. [2017-1 Prova 1 - Leila Ribeiro e Luciana S. Buriol](https://github.com/eliezerb/CMP600/tree/master/Exams/2017-1%20Prova%201)
-13. [2017-1 Prova 2 - Leila Ribeiro e Luciana S. Buriol]()
+13. [2017-1 Prova 2 - Leila Ribeiro e Luciana S. Buriol](https://github.com/eliezerb/CMP600/tree/master/Exams/2017-1%20Prova%202)
 14. [2017-2 Prova 1 - Álvaro Freitas Moreira e Luciana S. Buriol](https://github.com/eliezerb/CMP600/tree/master/Exams/2017-2%20Prova%201)
 
 
